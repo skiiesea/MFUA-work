@@ -19,3 +19,9 @@ set_target_properties(HelloWorld PROPERTIES
     VS_DOTNET_TARGET_FRAMEWORK_VERSION "v4.7.2"
     VS_DOTNET_REFERENCES "System;System.ComponentModel;System.Data;System.Collections;System.Windows.Forms;System.Drawing"
 )
+
+
+
+
+$env:Path+="; // путь к BIN cmake "
+cmake -G "Version Studio 17" -S . -B build
