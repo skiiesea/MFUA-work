@@ -1,0 +1,89 @@
+2026-05-08 10:03:23 | 192.168.126.89 | Command: SET kSET <key> <value>\n | Result: OK
+2026-05-08 10:03:31 | 192.168.126.89 | Command: GET <key>\n | Result: NOT_FOUND
+2026-05-08 10:03:39 | 192.168.126.89 | Command: GET <key> | Result: NOT_FOUND
+2026-05-08 10:03:44 | 192.168.126.89 | Command: Delete key | Result: ERROR: unknown_command
+2026-05-08 10:03:50 | 192.168.126.89 | Command: GET <key> | Result: NOT_FOUND
+2026-05-08 10:03:55 | 192.168.126.89 | Command: DEL <key> | Result: NOT_FOUND
+2026-05-08 10:04:04 | 192.168.126.89 | Command: GET <key>\n | Result: NOT_FOUND
+2026-05-08 10:04:09 | 192.168.126.89 | Command: QUIT | Result: BYE
+2026-05-08 10:04:57 | 192.168.126.89 | Command: GET | Result: ERROR: invalid_key
+2026-05-08 10:05:03 | 192.168.126.89 | Command: GET 1000 | Result: NOT_FOUND
+2026-05-08 10:05:26 | 192.168.126.89 | Command: SET name Alex | Result: OK
+2026-05-08 10:05:31 | 192.168.126.89 | Command: SET age 19 | Result: OK
+2026-05-08 10:05:46 | 192.168.126.89 | Command: SET weight 1000 | Result: OK
+2026-05-08 10:05:50 | 192.168.126.89 | Command: GET weight  | Result: VALUE: 1000
+2026-05-08 10:05:55 | 192.168.126.89 | Command: GET age | Result: VALUE: 19
+2026-05-08 10:05:59 | 192.168.126.89 | Command: DEL weight | Result: DELETED
+2026-05-08 10:06:06 | 192.168.126.89 | Command: GET weight | Result: NOT_FOUND
+2026-05-08 10:06:08 | 192.168.126.89 | Command: quit | Result: ERROR: unknown_command
+2026-05-08 10:06:09 | 192.168.126.89 | Command: QUIT | Result: BYE
+2026-05-08 10:07:35 | 192.168.126.141 | Command: GET | Result: ERROR: invalid_key
+2026-05-08 10:07:44 | 192.168.126.141 | Command: GET age | Result: VALUE: 19
+2026-05-08 10:08:08 | 192.168.126.141 | Command: GET weight | Result: NOT_FOUND
+2026-05-08 10:08:19 | 192.168.126.141 | Command: GET weight | Result: NOT_FOUND
+2026-05-08 10:08:35 | 192.168.126.141 | Command: GET age | Result: VALUE: 19
+2026-05-08 10:08:35 | 192.168.126.141 | Command: GET age | Result: VALUE: 19
+2026-05-08 10:08:35 | 192.168.126.141 | Command: GET age | Result: VALUE: 19
+2026-05-08 10:08:36 | 192.168.126.141 | Command: GET age | Result: VALUE: 19
+2026-05-08 10:08:36 | 192.168.126.141 | Command: GET age | Result: VALUE: 19
+2026-05-08 10:08:37 | 192.168.126.141 | Command: GET age | Result: VALUE: 19
+2026-05-08 10:08:37 | 192.168.126.141 | Command: GET age | Result: VALUE: 19
+2026-05-08 10:08:37 | 192.168.126.141 | Command: GET age | Result: VALUE: 19
+2026-05-08 10:08:37 | 192.168.126.141 | Command: GET age | Result: VALUE: 19
+2026-05-08 10:08:38 | 192.168.126.141 | Command: GET age | Result: VALUE: 19
+2026-05-08 10:08:38 | 192.168.126.141 | Command: GET age | Result: VALUE: 19
+2026-05-08 10:08:38 | 192.168.126.141 | Command: GET age | Result: VALUE: 19
+2026-05-08 10:08:38 | 192.168.126.141 | Command: GET age | Result: VALUE: 19
+2026-05-08 10:08:38 | 192.168.126.141 | Command: GET age | Result: VALUE: 19
+2026-05-08 10:08:39 | 192.168.126.141 | Command: GET age | Result: VALUE: 19
+2026-05-08 10:08:39 | 192.168.126.141 | Command: GET age | Result: VALUE: 19
+2026-05-08 10:08:39 | 192.168.126.141 | Command: GET | Result: ERROR: invalid_key
+2026-05-08 10:08:39 | 192.168.126.141 | Command: GET | Result: ERROR: invalid_key
+2026-05-08 10:08:40 | 192.168.126.141 | Command: GET | Result: ERROR: invalid_key
+2026-05-08 10:08:40 | 192.168.126.141 | Command: GET | Result: ERROR: invalid_key
+2026-05-08 10:08:40 | 192.168.126.141 | Command: GET | Result: ERROR: invalid_key
+2026-05-08 10:08:40 | 192.168.126.141 | Command: GET | Result: ERROR: invalid_key
+2026-05-08 10:08:40 | 192.168.126.141 | Command: GET | Result: ERROR: invalid_key
+2026-05-13 17:17:24 | 192.168.126.89 | Command: SET age 100 | Result: OK
+2026-05-13 17:17:30 | 192.168.126.89 | Command: SET name Aleksey | Result: OK
+2026-05-13 17:17:39 | 192.168.126.89 | Command: SET weight 179 | Result: OK
+2026-05-13 17:17:48 | 192.168.126.89 | Command: SET kg 70 | Result: OK
+2026-05-13 17:17:52 | 192.168.126.89 | Command: GET name | Result: VALUE: Aleksey
+2026-05-13 17:17:55 | 192.168.126.89 | Command: GET kg | Result: VALUE: 70
+2026-05-13 17:17:59 | 192.168.126.89 | Command: get kg | Result: ERROR: unknown_command
+2026-05-13 17:18:02 | 192.168.126.89 | Command: GET age | Result: VALUE: 100
+2026-05-13 17:18:05 | 192.168.126.89 | Command: DEL age | Result: DELETED
+2026-05-13 17:18:08 | 192.168.126.89 | Command: SET age 19 | Result: OK
+2026-05-13 17:18:11 | 192.168.126.89 | Command: QUIT | Result: BYE
+2026-05-13 17:18:27 | 192.168.126.89 | Command: SET age 100 | Result: OK
+2026-05-13 17:18:29 | 192.168.126.89 | Command: DEL age | Result: DELETED
+2026-05-13 17:18:32 | 192.168.126.89 | Command: SET age 19 | Result: OK
+2026-05-13 17:18:37 | 192.168.126.89 | Command: EXIT | Result: ERROR: unknown_command
+2026-05-13 17:18:39 | 192.168.126.89 | Command: exit | Result: ERROR: unknown_command
+2026-05-13 17:18:41 | 192.168.126.89 | Command: quit | Result: ERROR: unknown_command
+2026-05-13 17:18:42 | 192.168.126.89 | Command: QUIT | Result: BYE
+2026-05-13 17:25:22 | 192.168.126.21 | Command: SET exam=PASS | Result: OK
+2026-05-13 17:25:30 | 192.168.126.21 | Command: GET exam | Result: NOT_FOUND
+2026-05-13 17:25:52 | 192.168.126.21 | Command: GET exam=PASS | Result: VALUE: 
+2026-05-13 17:25:57 | 192.168.126.21 | Command: GET exam PASS | Result: NOT_FOUND
+2026-05-13 17:26:02 | 192.168.126.21 | Command: SET exam PASS | Result: OK
+2026-05-13 17:26:06 | 192.168.126.21 | Command: GET exam | Result: VALUE: PASS
+2026-05-13 17:26:18 | 192.168.126.21 | Command: SET name GKJHGHK JLLKJLKJ | Result: OK
+2026-05-13 17:26:31 | 192.168.126.21 | Command: GET name | Result: VALUE: GKJHGHK JLLKJLKJ
+2026-05-13 17:26:48 | 192.168.126.21 | Command: SET name 12345 | Result: OK
+2026-05-13 17:26:53 | 192.168.126.21 | Command: GET name | Result: VALUE: 12345
+2026-05-13 17:26:57 | 192.168.126.21 | Command: DEL name | Result: DELETED
+2026-05-13 17:27:01 | 192.168.126.21 | Command: DEL exam | Result: DELETED
+2026-05-13 17:27:06 | 192.168.126.21 | Command: DEL exam=PASS | Result: DELETED
+2026-05-13 17:27:50 | 192.168.126.89 | Command: DEL age | Result: ERROR: storage_empty
+2026-05-13 17:28:10 | 192.168.126.89 | Command: SET age 19 | Result: OK
+2026-05-13 17:28:13 | 192.168.126.89 | Command: GET age | Result: VALUE: 19
+2026-05-13 17:28:15 | 192.168.126.89 | Command: DEL age | Result: DELETED
+2026-05-15 11:04:08 | 127.0.0.1 | Command: 127.0.0.1 | Result: ERROR: unknown_command
+2026-05-15 11:04:23 | 127.0.0.1 | Command: powershell.exe | Result: ERROR: unknown_command
+2026-05-15 11:05:03 | 127.0.0.1 | Command: STATUS powershell.exe | Result: ERROR: unknown_command
+2026-05-15 11:05:24 | 127.0.0.1 | Command: 127.0.0.1 | Result: ERROR: unknown_command
+2026-05-15 11:05:25 | 127.0.0.1 | Command: 127.0.0.1 | Result: ERROR: unknown_command
+2026-05-15 11:06:36 | 192.168.126.141 | Command: SET  | Result: ERROR: invalid_key
+2026-05-15 11:06:54 | 192.168.126.141 | Command: SET Name alex_Fitness | Result: OK
+2026-05-15 11:07:39 | 192.168.126.141 | Command: GET Name  | Result: VALUE: alex_Fitness
