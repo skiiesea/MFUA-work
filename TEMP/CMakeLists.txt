@@ -27,8 +27,6 @@ $env:Path+="; // путь к BIN cmake "
 cmake -G "Version Studio 17" -S . -B build
 
 
-
-
 #pragma once
 
 #using <System.dll>
@@ -59,46 +57,46 @@ public:
         Label^ labelInput = gcnew Label();
         labelInput->Text = L"Enter text:";
         labelInput->Location = Point(20, 20);
-        labelInput->Size = Size(100, 25);
+        labelInput->Size = Drawing::Size(100, 25);
 
         textBoxInput = gcnew TextBox();
         textBoxInput->Location = Point(20, 50);
-        textBoxInput->Size = Size(440, 100);
+        textBoxInput->Size = Drawing::Size(440, 100);
         textBoxInput->Multiline = true;
 
         // Key field
         Label^ labelKey = gcnew Label();
         labelKey->Text = L"Key (1-10):";
         labelKey->Location = Point(20, 170);
-        labelKey->Size = Size(100, 25);
+        labelKey->Size = Drawing::Size(100, 25);
 
         textBoxKey = gcnew TextBox();
         textBoxKey->Location = Point(130, 170);
-        textBoxKey->Size = Size(50, 25);
+        textBoxKey->Size = Drawing::Size(50, 25);
         textBoxKey->Text = L"3";
 
         // Buttons
         buttonEncrypt = gcnew Button();
         buttonEncrypt->Text = L"Crypto";
         buttonEncrypt->Location = Point(100, 210);
-        buttonEncrypt->Size = Size(130, 40);
+        buttonEncrypt->Size = Drawing::Size(130, 40);
         buttonEncrypt->Click += gcnew EventHandler(this, &Encryptor::OnEncrypt);
 
         buttonDecrypt = gcnew Button();
         buttonDecrypt->Text = L"Decrypto";
         buttonDecrypt->Location = Point(260, 210);
-        buttonDecrypt->Size = Size(130, 40);
+        buttonDecrypt->Size = Drawing::Size(130, 40);
         buttonDecrypt->Click += gcnew EventHandler(this, &Encryptor::OnDecrypt);
 
         // Output field
         Label^ labelOutput = gcnew Label();
         labelOutput->Text = L"Result:";
         labelOutput->Location = Point(20, 270);
-        labelOutput->Size = Size(100, 25);
+        labelOutput->Size = Drawing::Size(100, 25);
 
         textBoxOutput = gcnew TextBox();
         textBoxOutput->Location = Point(20, 300);
-        textBoxOutput->Size = Size(440, 60);
+        textBoxOutput->Size = Drawing::Size(440, 60);
         textBoxOutput->Multiline = true;
         textBoxOutput->ReadOnly = true;
 
